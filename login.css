@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 66px;
+}
+.back{
+    border-radius: 10%;
+    margin-top: 0%;
+    margin-left: 30%;
+    margin-right: 27%;
+    max-width: 70%;
+}
+section,
+footer {
+    padding: 255px 0; 
+}
+body{
+   background-color:rgb(255, 255, 255);
+   padding: 100px 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+}
+.logotipo2{
+    position:absolute;
+    top:0.5%;
+    left: 5%;
+}
+nav .carrinho2{
+    position:absolute;
+    top: 2%;
+    left: 85%;
+}
+.Menu2{
+    position:absolute;
+    top: 2.7%;
+    left: 95%;
+    width: 34px;
+    right: 34px;
+}
+.cont_menu{
+    color: rgba(168, 70, 0, 0.918);
+    
+}
+.box_menu{
+    position: absolute;
+    top: 2.3%;
+    left: 93%;
+    width: 34px;
+    right: 34px;
+}
+.box_menu .sidebar_menu{
+    float: right;
+    height: 100%;
+    width: 320px;
+    background-color:  rgb(255, 241, 214);
+    position: fixed;
+    top:0;
+    left: 79.3%;
+    overflow: hidden;
+    left: 1350px;
+    transition: all 0.3s linear;
+}
+.box_menu .sidebar_titulo{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 2px 0px #6e38382e;
+}
+.box_menu .sidebar_titulo{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    left: 20px;
+    line-height: 60px;
+    cursor: default;
+}
+.sidebar_menu .cont_menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: block;
+}
+.sidebar_menu .cont_menu li{
+    list-style: none;
+    margin: 10px;
+    padding: 14px 20px;
+    border-radius: 10px; 
+    transition: 0.3s; 
+}
+.sidebar_menu .cont_menu li:hover{
+    background-color: rgb(255, 255, 254);
+}
+.sidebar_menu .cont_menu a{
+    color: chocolate;
+    text-decoration: none;
+    font-size: 20px;
+}
+.box_menu .Menu img{
+    cursor: pointer;
+}
+.sidebar_menu .btn_close img{
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 260px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar_menu{
+    left: 1030px; 
+}
+
+.btn1{
+    background-color: black;
+    color: white;
+    padding: 20px 80px;
+    border-radius: 0px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+    position: absolute;
+    left: 45%;
+    top:70%
+}
+.btn1:hover{
+    background-color: rgb(22, 22, 22);
+}
+.linha{
+    position: absolute;
+    top:10%;
+
+}
+.p1{
+    position: absolute;
+    top: 90%;
+    left:42.9%;
+}
+.p2{
+    cursor: pointer;
+    color: blue;
+    position: absolute;
+    top:90%;
+    left: 56%;
+}
+
+.caixa1{
+    font-size: 70%;
+    background-color:rgb(221, 221, 221);
+    padding: 20px 160px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+    position: absolute;
+    left: 39%;
+    top:35%
+}
+.caixa2{
+    font-size: 70%;
+    background-color: rgb(221, 221, 221);
+    padding: 20px 160px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+    position: absolute;
+    left: 39%;
+    top:50%
+}
+   
