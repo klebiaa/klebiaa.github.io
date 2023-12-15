@@ -7,7 +7,7 @@
     <title>Cadastre-se</title>
 </head>
 <body>
-<header class="back" style="background-color:rgb(255, 246, 228);">
+<header class="back" style="background-color:rgb(255, 255, 255);">
     <div class="cabeçalho">
          <nav>
               <a href="atividade.html">
@@ -40,6 +40,9 @@
                   <li>
                       <a href="atividade.html">Pagina Inicial</a>
                   </li>
+                  <li>
+                    <a href="login.html">Fazer login</a>
+                  </li>
                    <li>
                       <a href="cadastre-se.html">Cadastre-se</a>
                   </li>
@@ -52,18 +55,79 @@
               </ul>
           </div>
       </div>
-  </div>  
-       <nav>
-     <section class="banner" style="background-color: rgb(190, 204, 219);">
-        <div>
-          <h1 class="btn1">Cadastre-se</h1>
-          <p class="p1">Já tem uma conta?</p><p class="p2">Entrar</p>
-        </div>
-          <h1 class="caixa"> Nome</h1>
-          <h1 class="caixa1">Email</h1>
-          <h1 class="caixa2">Senha</h1>
-        </nav>
-     </section>
-</header>   
+  </div> 
+</header>  
+    <section class="fundo" style="background-color: wheat;">
+        <h1 class="btn1">Sistema de Cadastro de clientes</h1><br>
+        <div class="form">
+        <form method="post" action="cadastre.php"><br>
+          <h1 class="dados">Dados do cliente</h1><br><br>
+          <label for="nome">Nome:</label>
+          <input type="text" size="40" placeholder="Nome Completo">
+          <label for="cpf">CPF</label>
+          <input type="text" placeholder="000.000.000-00"><br><br>
+          <label for="email">Email:</label>
+          <input type="text" size="40" placeholder="Email Válido">
+          <label for="rg">RG:</label>
+          <input type="text" placeholder="00.000.000-0">
+          <label class="sen" for="senha">Senha:</label>
+          <input class="senha" type="text" size="20" placeholder="Senha Válida">
+          <label class="sex" for="sexo">Sexo:</label>
+          <input type="radio" name="opcao" id="op1"><br><br>
+          <label class="masc" for="mas">Masculino</label>
+          <input type="radio" name="opcao" id="op2"><br><br>
+          <label class="fem" for="feminino">Feminino</label>
+          <input type="radio" name="opcao" id="op3"><br><br>
+          <label class="out" for="outro">Outro</label>
+          <h2 class="ende">Endereço</h2><br><br>
+          <label for="uf">Estado:</label>
+          <select name="estado" id="uf">
+                <option value="1">Acre</option>
+                <option value="2">Amazonas</option>
+                <option value="3">Amapá</option>
+                <option value="4">Pará</option>
+                <option value="5">Rondônia</option>
+                <option value="6">Roraima</option>
+                <option value="7">Tocantis</option>
+                <option value="8">Alagoas</option>
+                <option value="9">Bahia</option>
+                <option value="10">Ceará</option>
+                <option value="11">Maranhão</option>
+                <option value="12">Piauí</option>
+                <option value="13">Pernambuco</option>
+                <option value="14">Paraíba</option>
+                <option value="15">Rio Grande do Norte</option>
+                <option value="16">Sergipe</option>
+                <option value="17">Goiás</option>
+                <option value="18">Mato Grosso</option>
+                <option value="19">Mato Grosso do Sul</option>
+                <option value="20">Distrito Federal</option>
+                <option value="21">Espirito Santo</option>
+                <option value="22">Minas Gerais</option>
+                <option value="23">Rio de Jnaeiro</option>
+                <option value="24">São Paulo</option>
+                <option value="25">Paraná</option>
+                <option value="26">Rio Grande do Sul</option>
+                <option value="27">Santa Catarina</option>
+            </section>
+          <label for="cidade">Cidade:</label>
+          <input type="text" placeholder="Cidade"><br><br>
+          <label for="cep">CEP:</label>
+          <input type="text" placeholder="00000-000" >
+          <label for="bairro">Bairro:</label>
+          <input type="text" placeholder="Bairro"><br><br>
+          <label for="rua">Rua:</label>
+          <input type="text" size="30" placeholder="Logradouro">
+          <label for="nu">Numéro</label>
+          <input type="text" size="10" placeholder="(00) 0000-0000"><br><br>
+          <label for="comp">Complemento:</label>
+          <input type="text"size="30" placeholder="Andar,Aparmento, Bloco" ><br><br>
+          <input type="submit" value="Cadstrar-se" style="color: white;"> &nbsp; &nbsp;
+          <a href="atividade.html"><input type="button" value="Voltar"></a>
+          <p class="p1">Já tem cadastro?</p>
+          <a href="login.html"><p class="p2">Entrar</p></a>
+        </form>
+        </div> 
+    </section>
 </body>
 </html>

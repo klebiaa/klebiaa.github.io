@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tabela.css">
+    <title>Usuários</title>
+    <script type='text/javascript' src="main.js"></script>
+</head>
+<body page='lista'>
+    <div class="container">
+        <nav class="look">
+            <a href="atividade.html">
+                <img class="logotipo" src="img/logo.png" alt="logo albia" width="120" height="60">
+            </a>
+            <a href="carrinho.html">
+                <img class="carrinho" src="img/Shopping bag 1.png" alt="Carrinho de compras">
+            </a>
+            <ul class="ul">
+                <a style="text-decoration: none;" href="cadastre-se.html" class="btn1">Cadastre-se</a>
+            </ul> 
+        </nav>  
+    <div class="box_menu">
+        <input type="checkbox" id="check">
+            <div class="Menu">
+            <label for="check">
+                <img src="img/Xbox Menu.png" alt="menu">
+            </label>
+        </div>
+        <div class="sidebar_menu">
+            <div class="sidebar_titulo">
+                <a style="text-decoration: none; color: saddlebrown;" href="#">Menu Albia</a>
+            </div>
+            <div class="btn_close">
+                <label for="check">
+                    <img src="img/close.png" alt="Fechar">
+                </label>
+            </div>
+            <div class="cont_menu">
+                <ul>
+                    <li>
+                        <a href="atividade.html">Pagina Inicial</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Fazer login</a>
+                    </li>
+                     <li>
+                        <a href="cadastre-se.html">Cadastre-se</a>
+                    </li>
+                    <li>
+                        <a href="carrinho.html">Carrinho</a>
+                    </li>
+                    <li>
+                        <a href="biografia.html">Biografia-Aline Medeiros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id='listaRegistros'>
+
+        <div style='display: flex;'>
+            <input style='flex:1' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Fone</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+
+        <div>
+            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
+        </div>
+
+    </div>
+
+    <form id='cadastroRegistro'>
+
+        <div class='label'>
+            <div>ID</div>
+            <div>
+                <input type='number' readonly id='id' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Nome</div>
+            <div>
+                <input id='nome' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Fone</div>
+            <div>
+                <input type='tel' id='fone' />
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button onclick="vizualizar('lista')" class="cin" type='button'>Cancelar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>

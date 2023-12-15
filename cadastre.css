@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Playfair+Display:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -139,19 +140,16 @@ nav .carrinho2{
 }
 
 .btn1{
-    background-color: black;
+    font-family: 'Metal', serif;
+    border-radius: 40%;
+    background-color: rgb(136, 72, 0);
     color: white;
-    padding: 15px 70px;
-    border-radius: 0px;
-    cursor: pointer;
+    padding: 5px 100px;
+    border-radius: 5px;
     display: inline-block;
-    transition: 0.1s;
     position: absolute;
-    left: 43%;
-    top:80%
-}
-.btn1:hover{
-    background-color: rgb(22, 22, 22);
+    left: 33%;
+    top:30%
 }
 .linha{
     position: absolute;
@@ -160,49 +158,100 @@ nav .carrinho2{
 }
 .p1{
     position: absolute;
-    top: 90%;
-    left:42.9%;
+    top: 105%;
+    left:0%;
 }
 .p2{
     cursor: pointer;
-    color: blue;
+    color: rgb(0, 162, 255);
     position: absolute;
-    top:90%;
-    left: 51.9%;
+    top:105%;
+    left: 18%;
 }
-.caixa{
-    font-size: 70%;
-    background-color:rgb(221, 221, 221);
-    padding: 20px 160px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.1s;
-    position: absolute;
-    left: 39%;
-    top:30%
+.fundo{
+    width: 1349.3px;
+    height: 150vh;
 }
-.caixa1{
-    font-size: 70%;
-    background-color:rgb(221, 221, 221);
-    padding: 20px 160px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.1s;
-    position: absolute;
-    left: 39%;
-    top:45%
+.ende{
+    margin-top: 3%;
 }
-.caixa2{
-    font-size: 70%;
-    background-color: rgb(221, 221, 221);
-    padding: 20px 160px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.1s;
+.senha{
     position: absolute;
-    left: 39%;
-    top:60%
+    top: 33% ;
+    left: 7%;
+}
+.sen{
+    position: absolute;
+    top: 35% ;
+    left: 0%;
+}
+.form{
+    color: saddlebrown;
+    position: absolute;
+    top: 55%;
+    left: 20%;
+}
+input,select{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+input[type="submit"]
+{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 90px;
+    height: 35px;
+    background-color: black
+}
+input[type="button"]
+{
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    width: 90px;
+    height: 35px;
+    background-color: rgb(255, 171, 46)
+}
+.sex{
+    position: absolute;
+    top: 10%;
+    left: 0px;
+}
+h2{
+    position: absolute;
+    top: 40%;
+}
+.masc{
+    position: absolute;
+    top: 10%;
+    left: 9%;
+}
+.fem{
+    position: absolute;
+    top: 10%;
+    left: 24%;
+}
+.out{
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+#op1{
+    position: absolute;
+    top: 8.6%;
+    left: 3%;
+}
+#op2{
+    position: absolute;
+    top: 8.6%;
+    left: 18%;
+}
+#op3{
+    position: absolute;
+    top: 8.6%;
+    left: 34%;
 }

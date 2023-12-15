@@ -1,0 +1,240 @@
+#listaRegistros{ display: none; }
+#cadastroRegistro{
+    display: none;
+    flex-direction: column;
+    gap: 30px;
+}
+
+body[page=lista] #listaRegistros{ display: block; }
+body[page=cadastro] #cadastroRegistro{ display: flex; }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th,
+table td{
+    font-size: 14px;
+    padding: 10px 15px;
+    border: solid 1px #ccc;
+}
+
+button{
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: saddlebrown;
+    color: #fff;
+    margin: 3px;
+    padding: 10px 15px;
+}
+button.cin{
+    background-color: rgb(185, 112, 59);
+    color: #ffffff;
+}
+button.mel{
+    background-color: rgb(255, 138, 4);
+}
+button:hover{
+    opacity: 0.8;
+}
+
+input{
+    border: solid 1px #686868;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.label>div{
+    display: flex;
+}
+.label>div>input{
+    flex: 1;
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2% 1%;
+}
+.btn1{
+    font-size: arial;
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    display: block;
+    transition: 0.1s;
+    position: absolute;
+    top: 1.5%;
+    left: 80%;
+}
+.btn1:hover{
+    background-color: rgb(22, 22, 22);
+}
+.btn{
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: 0.1s;
+    display:inline-flex;
+    font-size: 25px;
+    position: absolute;
+    top: 90%;
+    left: 6%;
+}
+.btn1.animate-btn1{
+ animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: rgb(202, 202, 202);
+}
+
+nav.look{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+}
+nav ul a::after{
+     content: "";
+     background-color: white ;
+     height: 3px ;
+     width: 0%;
+     display: block;
+     margin: 0 auto;
+     transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 0%;
+
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin: 10px;
+    padding: 100px 0px;
+}
+.p1{
+    text-align:left;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin: 20px 0;
+}
+.p2{
+    font-size: 25px;
+    font-weight: lighter;
+    margin: 20px 0;
+}
+.logotipo{
+       position: absolute;
+       top:0.5%;
+}
+.carrinho{
+    position: absolute;
+    top: 2.5%;
+    left: 76.5%;
+}
+
+.Menu{
+    position: absolute;
+    top: 2.7%;
+    left: 95%;
+    width: 34px;
+    right: 34px;
+}
+.cont_menu{
+    color: rgba(168, 70, 0, 0.918);
+    
+}
+.box_menu{
+    position: absolute;
+    top: 2.3%;
+    left: 93%;
+    width: 34px;
+    right: 34px;
+}
+.box_menu .sidebar_menu{
+    float: right;
+    height: 100%;
+    width: 320px;
+    background-color:  rgb(255, 241, 214);
+    position: fixed;
+    top:0;
+    left: 150%;
+    overflow: hidden;
+    left: 1365px;
+    transition: all 0.3s linear;
+}
+.box_menu .sidebar_titulo{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 2px 0px #6e38382e;
+}
+.box_menu .sidebar_titulo{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    left: 20px;
+    line-height: 60px;
+    cursor: default;
+}
+.sidebar_menu .cont_menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    display: block;
+}
+.sidebar_menu .cont_menu li{
+    list-style: none;
+    margin: 10px;
+    padding: 14px 20px;
+    border-radius: 10px; 
+    transition: 0.3s; 
+}
+.sidebar_menu .cont_menu li:hover{
+    background-color: rgb(255, 255, 254);
+}
+.sidebar_menu .cont_menu a{
+    color: chocolate;
+    text-decoration: none;
+    font-size: 20px;
+}
+.box_menu .Menu img{
+    cursor: pointer;
+}
+.sidebar_menu .btn_close img{
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 260px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .sidebar_menu{
+    left: 1045px; 
+}
+
